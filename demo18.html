@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DEMO-18</title>
+        <script>
+            //Arrays
+            const a = [10,20,30]//same type of elements
+            document.writeln("<u>Demo on Arrays</u></br>")
+            document.writeln(a+"</br>")
+            document.writeln(typeof a+"</br>")
+            document.writeln(a.length+"</br>")
+            document.writeln(a[0]+"</br>")
+            document.writeln(a[2]+"</br>")
+            document.writeln(a[5]+"</br>")
+            document.writeln(typeof a[1]+"</br>")
+            a[2]="klu"
+            document.writeln(a+"</br>")
+            a[3]="cse"
+            document.writeln(a+"</br>")
+            a.push(40)
+            a.push("MSWD")
+            document.writeln(a+"</br>")
+            document.writeln(a.length+"</br>")
+            a.pop()
+            document.writeln(a+"</br>")
+            document.writeln("Length Of Array: "+a.length+"</br>")
+            document.writeln("Reverse Of Array: "+a.reverse()+"</br>")
+            document.writeln("Sorted Order: "+a.sort()+"</br>")
+            document.writeln("Array: "+a+"</br>")
+            let element = a.shift()
+            document.writeln(element+"</br>"+"After Shifting:"+a+"</br>")
+            let len = a.unshift(10)
+            document.writeln(len+"</br>"+"After Unshifting:"+a+"</br>")
+            len = a.unshift("psqt","aws",143)
+            document.writeln(len+"</br>"+"After Unshifting:"+a+"</br>")
+            document.writeln("<u>Display Array Elements using for loop</u></br>")
+            for(let i=0;i<a.length;i++)
+                document.writeln(a[i]+"</br>")
+            document.writeln("<u>Display Array Elements using for in loop</u></br>")
+            for(let i in a)
+                document.writeln(a[i]+"</br>")
+            document.writeln("<u>Display Array Elements using for of loop</u></br>")
+            for(let l of a)
+                document.writeln(l+"</br>")
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
