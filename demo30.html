@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DEMO-30</title>
+        <script>
+           //map method
+           const arr1 = [23,45,62,34,56,78,90]
+           document.writeln("Array arr1:"+arr1+"</br>")
+           const output1 = arr1.map((number) => number*20 )
+           document.writeln("Array output1:"+output1+"</br>")
+           //filter method
+           const arr2=[10,20,21,32,56,91,100]
+           document.writeln("Array arr2:"+arr2+"</br>")
+           const output2 = arr2.filter((element)=>element%2==0)
+           document.writeln("Array output2:"+output2+"</br>")
+           //reduced method
+           const arr3 = [10,20,30,40,50]
+           document.writeln("Array arr3:"+arr3+"</br>")
+           const display = (sum,element) => sum+=element
+           const output3 = arr3.reduce(display,0)
+           document.writeln("Sum of arr3:"+output3+"</br>")
+           
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

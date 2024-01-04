@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DEMO-31</title>
+        <script>
+           //template literal
+           const name = "Tarun"
+           // ` backtick
+           document.write(`<b>My name is ${name}</b></br>`)
+           //spread operator
+           const a = [1,2,3]
+           const b = [...a,4,5]//... spread operator
+           document.writeln(a+"</br>"+b+"</br>")
+           const p = [10,20,30]
+           const q = [40,50,60]
+           const r = [...p,...q]
+           document.writeln(p+"</br>"+q+"</br>"+r+"</br>")
+           //destructing assignment
+           const arr = ["os","aws",10,30]
+           document.writeln("Arr: "+arr+"</br>")
+           document.writeln("Arr length: "+arr.length+"</br>")//4
+           const [m,s,w,d] = arr
+           document.writeln("M: "+m+"</br>S: "+s+"</br>W: "+w+"</br>D:"+d+"</br>")//os aws 10 30
+           const [i,j] = arr
+           document.writeln("I: "+i+"</br>J: "+j+"</br>")//os aws
+           const [x,,y] = arr
+           document.writeln("X: "+x+"</br>Y: "+y+"</br>")// os 10
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

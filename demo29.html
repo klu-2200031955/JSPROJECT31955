@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DEMO-29</title>
+        <script>
+           //map object - foreach method
+            const mapobj1 = new Map()
+            mapobj1.set(1,101)
+            mapobj1.set("id",1234)
+            mapobj1.set("name","KLU")
+            document.writeln("Map Object 1 size:"+mapobj1.size+"</br>")
+            document.writeln("<u>Map Object 1 Values</u></br>")
+            mapobj1.forEach((value)=>document.writeln(value+"</br>"))
+            document.writeln("<u>Map Object 1 keys and values</u></br>") 
+            mapobj1.forEach((value,key)=>{
+                document.writeln(key+": "+value+"</br>")
+            })
+            const mapobj2 = new Map([["id",101],["name","klu"]]) //constructor
+            document.writeln("Map Object 2 size:"+mapobj2.size+"</br>")
+            document.writeln("<u>Map Object 2 Values</u></br>")
+            mapobj2.forEach((value)=>document.writeln(value+"</br>"))
+            document.writeln("<u>Map Object 2 keys and values</u></br>") 
+            const display = (v,k) => {
+                document.writeln(k+": "+v+"</br>")
+            }
+            mapobj2.forEach(display)//display is call back
+            
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
