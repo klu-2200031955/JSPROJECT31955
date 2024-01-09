@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DEMO-36</title>
+        <script>
+           //parameterized constructor
+           class Product{
+            constructor(id,category,name,cost){
+                this.pid=id
+                this.pcategory=category
+                this.pname = name
+                this.pcost= cost
+            }
+            display(){
+                    document.writeln("Product Id: "+this.pid+"</br>Product Category: "+this.pcategory+"</br>Product Name: "+this.pname+"</br>Product Cost:"+this.pcost+"</br>")
+                }
+           }
+           let p1 = new Product(101,"Books","MSWD",280.5)
+           p1.display()
+           let p2 = new Product(102,"Cloths","Saree",4999.0)
+           p2.display()
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
